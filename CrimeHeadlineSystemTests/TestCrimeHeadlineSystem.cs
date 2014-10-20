@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CrimeHeadlineSystem;
 
 namespace CrimeHeadlineSystemTests
 {
@@ -9,11 +10,21 @@ namespace CrimeHeadlineSystemTests
         [TestMethod]
         public void Test_ReadTopCrime_on_Polisen()
         {
+            ///Arrange
+            CrimesHeadlinesSystem system = new CrimesHeadlinesSystem();
+            IScraper scraper = new PolisenScraper(system);
+
+
+            ///Act
+            
+            ///Assert
+            
         }
 
         [TestMethod]
         public void Test_ReadTopCrime_on_Utryckning()
         {
+
         }
     }
 }
