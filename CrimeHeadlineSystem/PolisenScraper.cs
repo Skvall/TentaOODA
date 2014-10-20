@@ -16,7 +16,7 @@ namespace CrimeHeadlineSystem
 
 
 
-        public void ReadTopCrime()
+        public string ReadTopCrime()
         {
             string site = String.Empty;
             string title = String.Empty;
@@ -24,6 +24,8 @@ namespace CrimeHeadlineSystem
             //kod som scrapear polisen.se efter första nyheten och lägger i site och title variablerna.
 
             system.FoundCrime(site, title);
+
+            return title + ", " + site;
         }
     }
 }

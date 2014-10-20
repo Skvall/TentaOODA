@@ -16,7 +16,7 @@ namespace CrimeHeadlineSystem
 
 
 
-        public void ReadTopCrime()
+        public string ReadTopCrime()
         {
             throw new NotImplementedException();
         }

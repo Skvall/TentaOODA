@@ -13,14 +13,14 @@ namespace CrimeHeadlineSystemTests
             ///Arrange
             CrimesHeadlinesSystem system = new CrimesHeadlinesSystem();
             IScraper scraper = new PolisenScraper(system);
-
-            scraper.ReadTopCrime();
+            
 
 
             ///Act
-            
+            string actual = scraper.ReadTopCrime();
+
             ///Assert
-            
+            Assert.IsNotNull(actual);    ///<--- måste ändra detta, ger false positive!!
         }
 
         [TestMethod]
