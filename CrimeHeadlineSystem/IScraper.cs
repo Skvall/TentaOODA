@@ -9,5 +9,6 @@ namespace CrimeHeadlineSystem
     public interface IScraper
     {
 
+        void ReadTopCrime();
     }
 }

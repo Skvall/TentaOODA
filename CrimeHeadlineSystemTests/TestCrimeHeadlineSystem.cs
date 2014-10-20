@@ -14,6 +14,8 @@ namespace CrimeHeadlineSystemTests
             CrimesHeadlinesSystem system = new CrimesHeadlinesSystem();
             IScraper scraper = new PolisenScraper(system);
 
+            scraper.ReadTopCrime();
+
 
             ///Act
             
