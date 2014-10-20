@@ -45,7 +45,6 @@ namespace CrimeHeadlineSystem
             reqHTML = webClient.DownloadData(strUrl);
             UTF8Encoding objUTF8 = new UTF8Encoding();
             string htmlContent = objUTF8.GetString(reqHTML);
-            Console.WriteLine(htmlContent);
 
             //extract title
             string reg1 = "<h3>(.*?)</h3>";
