@@ -20,12 +20,20 @@ namespace CrimeHeadlineSystemTests
             string actual = scraper.ReadTopCrime();
 
             ///Assert
-            Assert.IsNotNull(actual);    ///<--- måste ändra detta, ger false positive!!
+            Assert.IsNotNull(actual);    ///<--- måste ändra detta, ger false positive?
         }
 
         [TestMethod]
         public void Test_ReadTopCrime_on_Utryckning()
         {
+            ///Assert
+
+
+
+            ///Act
+
+
+            ///Assert
 
         }
     }
